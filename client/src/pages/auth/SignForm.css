@@ -1,0 +1,23 @@
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-form {
+    height: 65vh;
+    width: 45vw;
+    background: #128df6;
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 1200px){
+    .auth-form {
+        height: 70vh;
+        width: 95vw;
+        background: #128df6;
+        border-radius: 50px;
+    }
+}

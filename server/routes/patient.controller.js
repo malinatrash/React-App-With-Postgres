@@ -21,11 +21,11 @@ class PatientController {
     }
 
     async getOnePatient(req, res) {
-        const id = req.params.id
+        const {first_name, last_name, phone_number} = req.body
         const patients = await db.query(
             `SELECT *
              FROM patient
-             where id = $1`, [id]
+             where first_name = $1 and last_name = $2 and phone_number = $3`, [first_name, last_name, phone_number]
         )
         res.json(patients.rows[0])
     }

@@ -1,10 +1,13 @@
 const express = require('express')
 const patientRouter = require('./routes/patient.routes')
-
 const PORT = 3001
 
-const app = express()
+const cors = require('cors');
+const app = express();
 
+app.use(cors({
+    origin: 'http://localhost:3000'
+}));
 app.use(express.json())
 app.use('/api', patientRouter)
 
