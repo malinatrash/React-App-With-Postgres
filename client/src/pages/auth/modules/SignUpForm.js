@@ -53,7 +53,10 @@ const SignUpForm = () => {
             alignItems: 'center',
             gap: '50px'
         }}>
-            <div hidden={alertIsHidden} className={`error shake alert alert-danger`} role="alert">
+            <div
+                hidden={alertIsHidden}
+                className={`error shake alert alert-danger`}
+                role="alert">
                 Произошла ошибика регистрации
             </div>
             <h1>Регистрация</h1>

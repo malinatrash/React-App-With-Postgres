@@ -17,7 +17,7 @@ const App = () => {
                 />
                 <Route
                     path={'/*'}
-                    element={<Navigate to={'/error'}/>}
+                    element={<Navigate to={'/signup'}/>}
                 />
             </Routes>
         </BrowserRouter>
